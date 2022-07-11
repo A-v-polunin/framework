@@ -1,0 +1,62 @@
+.layout {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.layout tr td {
+    padding: 20px;
+    vertical-align: top;
+    border: solid 1px gray;
+}
+
+.header {
+    font-size: 30px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.sidebarHeader {
+    font-size: 20px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+a, a:visited {
+    color: darkgreen;
+}
+
+a:hover:after, a:focus:after {
+    width: 100%;
+}
+
+a:hover {
+    color: orangered;
+    transition: 1s;
+}
+
+a:after{
+    background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .8s ease-in-out;
+    color: orangered;
+}
+
+a {
+    display: inline-block;
+    color: darkgreen; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
